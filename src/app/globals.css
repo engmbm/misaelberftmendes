@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-canvas text-ink font-sans antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  ::selection {
+    background: #1B3B8F;
+    color: #F7F8FA;
+  }
+}
+
+@layer components {
+  /* Bloco técnico: cabeçalho estilo carimbo de prancha de projeto elétrico */
+  .stamp {
+    @apply font-mono text-xs uppercase tracking-tag text-ink-soft;
+  }
+
+  /* Rótulo de fase (L1, L2, L3) */
+  .fase {
+    @apply font-mono text-[11px] uppercase tracking-tag text-tensao;
+  }
+
+  /* Divisor tipo linha de esquema elétrico */
+  .rule-line {
+    @apply h-px w-full bg-rule;
+  }
+
+  /* Botão primário — azul industrial */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-md bg-tensao px-5 py-2.5 text-sm font-medium text-white transition hover:bg-tensao-lo focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tensao-hi;
+  }
+
+  /* Botão secundário — outline */
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 rounded-md border border-ink/15 px-5 py-2.5 text-sm font-medium text-ink transition hover:border-ink/40 hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tensao-hi;
+  }
+
+  /* Card das frentes */
+  .card {
+    @apply flex flex-col rounded-lg border border-rule bg-white p-6 transition hover:border-tensao/60;
+  }
+
+  /* Container padrão */
+  .container-x {
+    @apply mx-auto w-full max-w-6xl px-6;
+  }
+}
+
+/* Grid sutil de papel-milimetrado no hero (opcional, muito discreto) */
+.blueprint-grid {
+  background-image:
+    linear-gradient(to right, rgba(27, 59, 143, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(27, 59, 143, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
