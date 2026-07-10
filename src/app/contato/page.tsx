@@ -59,7 +59,7 @@ export default function ContatoPage() {
         </div>
 
         <form
-          action="https://formspree.io/f/SEU_ENDPOINT"
+          action="https://formspree.io/f/xjgqnleo"
           method="POST"
           className="rounded-lg border border-rule bg-white p-8"
         >
