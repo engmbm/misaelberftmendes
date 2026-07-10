@@ -146,7 +146,7 @@ export default function HomePage() {
               <p className="stamp mb-2">Atuação</p>
               <p className="font-display text-2xl font-medium">Porto Alegre</p>
               <p className="mt-1 text-xs text-ink-muted">
-                Canoas · Guaíba · Região Metropolitana
+                Canoas · Região Metropolitana
               </p>
             </div>
           </div>

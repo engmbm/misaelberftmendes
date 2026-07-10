@@ -46,7 +46,7 @@ export function Footer() {
 
         <div className="mt-6 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <p className="font-mono text-xs uppercase tracking-tag text-ink-muted">
-            CREA-RS 251305 · Porto Alegre/RS · Canoas · Guaíba
+            CREA-RS 251305 · Porto Alegre/RS · Canoas · Região Metropolitana
           </p>
           <p className="text-xs text-ink-muted">
             © {new Date().getFullYear()} Misael Berft Mendes

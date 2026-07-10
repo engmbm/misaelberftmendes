@@ -19,8 +19,7 @@ export default function SobrePage() {
           <p>
             Meu nome é Misael Berft Mendes. Sou engenheiro eletricista formado
             e registrado no CREA-RS sob o número 251305, atuando na região
-            metropolitana de Porto Alegre — com foco em Canoas, Guaíba e
-            Porto Alegre.
+            metropolitana de Porto Alegre.
           </p>
           <p>
             Minha prática se divide em três frentes que compartilham a mesma
@@ -54,7 +53,7 @@ export default function SobrePage() {
           <div className="grid gap-4 bg-white p-8 md:grid-cols-[160px_1fr]">
             <p className="stamp">Base</p>
             <p className="text-ink">
-              Guaíba / Porto Alegre / Canoas — Rio Grande do Sul.
+              Porto Alegre / Canoas / Região Metropolitana — Rio Grande do Sul.
             </p>
           </div>
         </div>
