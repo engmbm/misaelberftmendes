@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Sobre — Misael Berft Mendes",
@@ -128,12 +129,12 @@ export default function SobrePage() {
               técnicos que aparecem em obra ou em tribunal já foram, antes,
               problemas de <em>decisão</em>. Isso me levou ao IGT, onde me
               certifiquei como Coach Criacional e criei a{" "}
-              <a
-                href="https://www.linkedin.com/in/misael-berftmendes"
+              <Link
+                href="/coaching"
                 className="text-tensao underline underline-offset-4 hover:text-tensao-lo"
               >
                 Coaching Levado a Sério
-              </a>
+              </Link>
               , marca com a qual atendo profissionais que estão fazendo muito
               e obtendo pouco.
             </p>
