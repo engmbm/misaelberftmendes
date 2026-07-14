@@ -38,6 +38,16 @@ export function Footer() {
                   WhatsApp
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/misael-berftmendes"
+                  target="_blank"
+                  rel="noopener"
+                  className="hover:text-tensao"
+                >
+                  LinkedIn
+                </a>
+              </li>
             </ul>
           </div>
         </div>
