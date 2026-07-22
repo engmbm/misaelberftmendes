@@ -84,6 +84,28 @@ export default function EngenhariaPage() {
           </div>
 
           <div className="mt-14 rounded-lg border border-rule bg-white p-8">
+            <p className="stamp mb-3">Parcerias e vínculos</p>
+            <h3 className="font-display text-xl font-medium tracking-tight">
+              Perito cadastrado na M Perícias
+            </h3>
+            <p className="mt-3 text-sm text-ink-soft">
+              Estou listado no diretório público da M Perícias como Perito
+              Engenheiro Eletricista com atuação em Canoas/RS e região
+              metropolitana. O cadastro facilita a nomeação em ações que
+              exigem verificação profissional independente e reforça o vínculo
+              formal do meu trabalho pericial.
+            </p>
+            <a
+              href="https://www.mpericias.com.br/peritos/perito-engenheiro-eletricista-em-canoas-rs-misael-berft-mendes-m-pericias"
+              target="_blank"
+              rel="noopener"
+              className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-tensao hover:text-tensao-lo"
+            >
+              Ver perfil na M Perícias →
+            </a>
+          </div>
+
+          <div className="mt-6 rounded-lg border border-rule bg-white p-8">
             <h3 className="font-display text-xl font-medium tracking-tight">
               Sobre o escopo dos laudos
             </h3>
