@@ -24,7 +24,7 @@ const servicos = [
     titulo: "Perícia e assistência técnica",
     lead: "Perito judicial e assistente técnico em engenharia elétrica. Apoio a advogados em ações que envolvem instalações, acidentes e faturamento.",
     publico: "Advogados · Escritórios · Partes em processo",
-    href: "/engenharia",
+    href: "/pericia",
     cta: "Solicitar análise do caso",
   },
 ];

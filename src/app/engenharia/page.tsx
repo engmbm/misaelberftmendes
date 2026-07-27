@@ -83,7 +83,7 @@ export default function EngenhariaPage() {
             ))}
           </div>
 
-          <div className="mt-4 grid gap-4 md:grid-cols-2">
+          <div className="mt-4 grid gap-4 md:grid-cols-3">
             <Link
               href="/laudos"
               className="group flex flex-col rounded-lg border-2 border-tensao/30 bg-white p-8 transition hover:border-tensao"
@@ -115,6 +115,23 @@ export default function EngenhariaPage() {
               </p>
               <p className="mt-6 text-sm font-medium text-tensao">
                 Ver página de RT →
+              </p>
+            </Link>
+            <Link
+              href="/pericia"
+              className="group flex flex-col rounded-lg border-2 border-tensao/30 bg-white p-8 transition hover:border-tensao"
+            >
+              <p className="fase mb-4">Saiba mais</p>
+              <h3 className="font-display text-xl font-medium tracking-tight">
+                Perícia e assistência técnica
+              </h3>
+              <p className="mt-3 flex-1 text-sm text-ink-soft">
+                Perito judicial nomeado e assistente técnico contratado por
+                advogados — em contestação de TOI, acidentes, incêndios de
+                origem elétrica e vícios de obra.
+              </p>
+              <p className="mt-6 text-sm font-medium text-tensao">
+                Ver página de perícia →
               </p>
             </Link>
           </div>
