@@ -8,15 +8,15 @@ const servicos = [
     titulo: "Laudos técnicos elétricos",
     lead: "Laudo com ART para NR-10, SPDA (NBR 5419), conformidade e regularização. Para empresas, indústrias e condomínios.",
     publico: "Empresas · Condomínios · Indústrias",
-    href: "/engenharia",
-    cta: "Solicitar laudo",
+    href: "/laudos",
+    cta: "Ver laudos",
   },
   {
     codigo: "02",
     titulo: "Responsabilidade Técnica (RT) e ART",
     lead: "Regularização da sua empresa perante o CREA. Assumo a responsabilidade técnica e emito as ARTs necessárias para operar em conformidade.",
     publico: "Empresas de elétrica · Prestadores de serviço",
-    href: "/engenharia",
+    href: "/responsabilidade-tecnica",
     cta: "Regularizar minha empresa",
   },
   {

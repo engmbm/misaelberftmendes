@@ -83,6 +83,42 @@ export default function EngenhariaPage() {
             ))}
           </div>
 
+          <div className="mt-4 grid gap-4 md:grid-cols-2">
+            <Link
+              href="/laudos"
+              className="group flex flex-col rounded-lg border-2 border-tensao/30 bg-white p-8 transition hover:border-tensao"
+            >
+              <p className="fase mb-4">Saiba mais</p>
+              <h3 className="font-display text-xl font-medium tracking-tight">
+                Laudos técnicos elétricos
+              </h3>
+              <p className="mt-3 flex-1 text-sm text-ink-soft">
+                Conformidade (NBR 5410), SPDA (NBR 5419), NR-10, aterramento e
+                laudo pericial — para empresas, indústrias e condomínios.
+              </p>
+              <p className="mt-6 text-sm font-medium text-tensao">
+                Ver página de laudos →
+              </p>
+            </Link>
+            <Link
+              href="/responsabilidade-tecnica"
+              className="group flex flex-col rounded-lg border-2 border-tensao/30 bg-white p-8 transition hover:border-tensao"
+            >
+              <p className="fase mb-4">Saiba mais</p>
+              <h3 className="font-display text-xl font-medium tracking-tight">
+                RT e regularização no CREA
+              </h3>
+              <p className="mt-3 flex-1 text-sm text-ink-soft">
+                Assumo a Responsabilidade Técnica da sua empresa e faço o
+                registro no CREA-RS — regularização pontual ou RT mensal
+                contínua.
+              </p>
+              <p className="mt-6 text-sm font-medium text-tensao">
+                Ver página de RT →
+              </p>
+            </Link>
+          </div>
+
           <div className="mt-14 rounded-lg border border-rule bg-white p-8">
             <p className="stamp mb-3">Parcerias e vínculos</p>
             <h3 className="font-display text-xl font-medium tracking-tight">
