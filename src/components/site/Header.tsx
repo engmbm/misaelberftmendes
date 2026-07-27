@@ -6,7 +6,6 @@ const nav = [
   { href: "/docencia", label: "Docência" },
   { href: "/blog", label: "Blog" },
   { href: "/sobre", label: "Sobre" },
-  { href: "/contato", label: "Contato" },
 ];
 
 export function Header() {
@@ -29,14 +28,19 @@ export function Header() {
           <ul className="flex items-center gap-7 text-sm text-ink-soft">
             {nav.map((item) => (
               <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className="transition hover:text-ink"
-                >
+                <Link href={item.href} className="transition hover:text-ink">
                   {item.label}
                 </Link>
               </li>
             ))}
+            <li>
+              <Link
+                href="/contato"
+                className="rounded-md bg-tensao px-4 py-2 text-sm font-medium text-white transition hover:bg-tensao-lo"
+              >
+                Solicitar orçamento
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
