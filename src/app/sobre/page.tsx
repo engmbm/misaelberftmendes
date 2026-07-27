@@ -10,11 +10,11 @@ export const metadata: Metadata = {
 const trajetoria = [
   {
     periodo: "2026 →",
-    empresa: "Coaching Levado a Sério",
+    empresa: "Coach Criacional — IGT",
     cargo: "Coach Criacional",
     local: "Brasil",
     descricao:
-      "Marca própria de coaching. Atuação com profissionais que estão fazendo muito, mas sem resultado — clareza, estratégia e ação consistente para transformar esforço em resultado.",
+      "Formação e atuação pelo método Coaching Levado a Sério, do Gerônimo (IGT). Trabalho com profissionais que estão fazendo muito, mas sem resultado — clareza, estratégia e ação consistente para transformar esforço em resultado.",
   },
   {
     periodo: "2023 →",
@@ -51,10 +51,10 @@ const trajetoria = [
   {
     periodo: "2016 – 2021",
     empresa: "Instituto SENAI — Petróleo, Gás e Energia",
-    cargo: "Técnico de Laboratório (Metrologia Legal)",
+    cargo: "Responsável Técnico e da Qualidade do Laboratório",
     local: "Esteio/RS",
     descricao:
-      "Responsável técnico e da qualidade em laboratório acreditado NBR/ISO 17025. Signatário autorizado em calibração de sensores de temperatura, pressão e totalizadores de volume de gás, além de ensaios em medidores rotativos e de turbina.",
+      "Gestão técnica e da qualidade de laboratório acreditado na NBR/ISO 17025 em metrologia legal de gás. Signatário autorizado em calibração de sensores de temperatura, pressão e totalizadores de volume, ensaios em medidores rotativos e de turbina, desenvolvimento de métodos e cálculo de incerteza de medição.",
   },
 ];
 
@@ -91,16 +91,32 @@ export default function SobrePage() {
     <>
       {/* Hero */}
       <section className="border-b border-rule py-20 md:py-24">
-        <div className="container-x max-w-4xl">
-          <p className="stamp mb-4">Sobre</p>
-          <h1 className="font-display text-4xl font-medium leading-tight tracking-tight md:text-5xl">
-            Um engenheiro que também escuta.
-          </h1>
-          <p className="mt-6 max-w-2xl text-lg text-ink-soft">
-            Coach Criacional. Engenheiro Eletricista. Engenheiro de Dados. Três
-            rótulos que descrevem partes de uma mesma prática: ajudar pessoas e
-            sistemas a decidirem melhor.
-          </p>
+        <div className="container-x">
+          <div className="grid items-center gap-12 md:grid-cols-[1.4fr_1fr]">
+            <div>
+              <p className="stamp mb-4">Sobre</p>
+              <h1 className="font-display text-4xl font-medium leading-tight tracking-tight md:text-5xl">
+                Um engenheiro que também escuta.
+              </h1>
+              <p className="mt-6 max-w-2xl text-lg text-ink-soft">
+                Engenheiro Eletricista. Coach Criacional. Engenheiro de Dados.
+                Três títulos que descrevem partes de uma mesma prática: ajudar
+                pessoas e sistemas a decidirem melhor.
+              </p>
+            </div>
+            <div className="relative mx-auto w-full max-w-xs md:max-w-none">
+              <div className="overflow-hidden rounded-xl border border-rule">
+                <img
+                  src="/misael.jpg"
+                  alt="Misael Berft Mendes, engenheiro eletricista"
+                  className="aspect-[4/5] w-full object-cover object-top"
+                />
+              </div>
+              <div className="absolute -bottom-3 left-4 rounded-md bg-tensao px-3 py-1.5 font-mono text-[11px] uppercase tracking-tag text-white">
+                CREA-RS 251305
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -116,32 +132,35 @@ export default function SobrePage() {
               Porto Alegre.
             </p>
             <p>
-              Minha trajetória começou em metrologia rigorosa — calibrando
-              medidores de gás sob a NBR/ISO 17025 no Instituto SENAI —,
-              passou pela manutenção elétrica de data center e sala cofre, por
-              projetos de hardware com certificações internacionais e chegou
-              hoje à coordenação de tecnologia numa empresa de IoT industrial.
-              Em paralelo, atuo como engenheiro eletricista autônomo em
-              perícias judiciais, laudos e responsabilidade técnica.
+              Minha trajetória começou na metrologia rigorosa — como
+              Responsável Técnico e da Qualidade de um laboratório acreditado
+              NBR/ISO 17025 no Instituto SENAI —, passou pela manutenção
+              elétrica de data center e sala cofre, por projetos de hardware
+              com certificações internacionais e chegou à coordenação de
+              tecnologia em uma empresa de IoT industrial. Foi essa base que
+              consolidou minha atuação como engenheiro eletricista em laudos,
+              responsabilidade técnica e perícia.
             </p>
             <p>
-              A frente humana veio depois: entendi que a maioria dos problemas
-              técnicos que aparecem em obra ou em tribunal já foram, antes,
-              problemas de <em>decisão</em>. Isso me levou ao IGT, onde me
-              certifiquei como Coach Criacional e criei a{" "}
+              A engenharia me ensinou que a maioria dos problemas técnicos que
+              chegam à obra ou ao tribunal já foram, antes, problemas de{" "}
+              <em>decisão</em>. Isso me levou ao IGT, onde me certifiquei como
+              Coach Criacional pelo método{" "}
               <Link
                 href="/coaching"
                 className="text-tensao underline underline-offset-4 hover:text-tensao-lo"
               >
                 Coaching Levado a Sério
               </Link>
-              , marca com a qual atendo profissionais que estão fazendo muito
-              e obtendo pouco.
+              , do Gerônimo — trabalhando com profissionais que estão fazendo
+              muito e obtendo pouco.
             </p>
             <p>
-              Este site reúne as três frentes que sustento hoje —
-              engenharia, coaching e docência técnica — porque, na prática,
-              elas se atravessam mais do que separam.
+              Hoje sustento três frentes profissionais — engenharia elétrica,
+              coaching e docência técnica — que, na prática, se atravessam mais
+              do que se separam. A engenharia é o eixo; as outras duas
+              ampliam o alcance do mesmo compromisso: ajudar pessoas e sistemas
+              a decidirem melhor.
             </p>
           </div>
         </div>
