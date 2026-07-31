@@ -1,4 +1,8 @@
+"use client";
+
 import Link from "next/link";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 const nav = [
   { href: "/engenharia", label: "Engenharia" },
@@ -9,6 +13,26 @@ const nav = [
 ];
 
 export function Header() {
+  const [aberto, setAberto] = useState(false);
+  const pathname = usePathname();
+
+  // Fecha o menu quando muda de rota
+  useEffect(() => {
+    setAberto(false);
+  }, [pathname]);
+
+  // Bloqueia scroll do body quando menu aberto
+  useEffect(() => {
+    if (aberto) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [aberto]);
+
   return (
     <header className="sticky top-0 z-40 border-b border-rule/70 bg-canvas/85 backdrop-blur">
       <div className="container-x flex h-16 items-center justify-between">
@@ -20,10 +44,12 @@ export function Header() {
           <span className="grid h-8 w-8 place-items-center rounded-md bg-tensao text-white text-[13px] font-medium font-display">
             MB
           </span>
-          <span className="font-display text-[15px] font-medium tracking-tight">
+          <span className="font-display text-[14px] sm:text-[15px] font-medium tracking-tight">
             Misael Berft Mendes
           </span>
         </Link>
+
+        {/* Navegação desktop */}
         <nav className="hidden md:block">
           <ul className="flex items-center gap-7 text-sm text-ink-soft">
             {nav.map((item) => (
@@ -43,7 +69,67 @@ export function Header() {
             </li>
           </ul>
         </nav>
+
+        {/* Botão hamburger mobile */}
+        <button
+          type="button"
+          onClick={() => setAberto((v) => !v)}
+          className="md:hidden flex h-10 w-10 items-center justify-center rounded-md text-ink hover:bg-white/60"
+          aria-label={aberto ? "Fechar menu" : "Abrir menu"}
+          aria-expanded={aberto}
+        >
+          {aberto ? (
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          ) : (
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="3" y1="7" x2="21" y2="7" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="17" x2="21" y2="17" />
+            </svg>
+          )}
+        </button>
       </div>
+
+      {/* Drawer mobile */}
+      {aberto && (
+        <div className="md:hidden fixed inset-x-0 top-16 bottom-0 z-30 overflow-y-auto bg-canvas">
+          <nav className="container-x py-6">
+            <ul className="flex flex-col gap-1">
+              {nav.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="block rounded-md px-3 py-3 text-base font-medium text-ink transition hover:bg-white"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+              <li className="mt-4">
+                <Link
+                  href="/contato"
+                  className="block rounded-md bg-tensao px-4 py-3 text-center text-base font-medium text-white transition hover:bg-tensao-lo"
+                >
+                  Solicitar orçamento
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/5551992387777"
+                  target="_blank"
+                  rel="noopener"
+                  className="mt-2 block rounded-md border border-ink/15 px-4 py-3 text-center text-base font-medium text-ink transition hover:bg-white"
+                >
+                  Falar no WhatsApp
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }

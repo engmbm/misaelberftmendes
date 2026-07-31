@@ -14,7 +14,7 @@ export default function ResponsabilidadeTecnicaPage() {
       <section className="border-b border-rule py-20 md:py-24">
         <div className="container-x">
           <p className="fase mb-4">Engenharia · RT e CREA</p>
-          <h1 className="max-w-3xl font-display text-4xl font-medium leading-tight tracking-tight md:text-5xl">
+          <h1 className="max-w-3xl font-display text-3xl font-medium leading-tight tracking-tight sm:text-4xl md:text-5xl">
             Regularize sua empresa no CREA — com um engenheiro eletricista
             como Responsável Técnico.
           </h1>
@@ -76,7 +76,7 @@ export default function ResponsabilidadeTecnicaPage() {
       <section className="border-b border-rule py-20">
         <div className="container-x">
           <p className="stamp mb-6">Dois caminhos</p>
-          <h2 className="font-display text-3xl font-medium tracking-tight md:text-4xl">
+          <h2 className="font-display text-2xl font-medium tracking-tight sm:text-3xl md:text-4xl">
             Regularização pontual ou RT contínua.
           </h2>
           <p className="mt-4 max-w-2xl text-sm text-ink-muted">
@@ -183,7 +183,7 @@ export default function ResponsabilidadeTecnicaPage() {
             <p className="font-mono text-xs uppercase tracking-tag text-white/60">
               Atendimento em todo o RS
             </p>
-            <h2 className="mt-3 font-display text-3xl font-medium leading-tight tracking-tight md:text-4xl">
+            <h2 className="mt-3 font-display text-2xl font-medium leading-tight tracking-tight sm:text-3xl md:text-4xl">
               Sua empresa precisa de Responsável Técnico?
             </h2>
             <p className="mt-4 max-w-xl text-white/80">

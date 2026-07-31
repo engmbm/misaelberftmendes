@@ -40,7 +40,7 @@ export default function DocenciaPage() {
       <section className="border-b border-rule py-20 md:py-24">
         <div className="container-x">
           <p className="fase mb-4">L3 · Docência técnica</p>
-          <h1 className="max-w-3xl font-display text-4xl font-medium leading-tight tracking-tight md:text-5xl">
+          <h1 className="max-w-3xl font-display text-3xl font-medium leading-tight tracking-tight sm:text-4xl md:text-5xl">
             Instrutor técnico para instituições que formam eletricistas.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-ink-soft">

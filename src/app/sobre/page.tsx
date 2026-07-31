@@ -95,7 +95,7 @@ export default function SobrePage() {
           <div className="grid items-center gap-12 md:grid-cols-[1.4fr_1fr]">
             <div>
               <p className="stamp mb-4">Sobre</p>
-              <h1 className="font-display text-4xl font-medium leading-tight tracking-tight md:text-5xl">
+              <h1 className="font-display text-3xl font-medium leading-tight tracking-tight sm:text-4xl md:text-5xl">
                 Um engenheiro que também escuta.
               </h1>
               <p className="mt-6 max-w-2xl text-lg text-ink-soft">
@@ -170,7 +170,7 @@ export default function SobrePage() {
       <section className="border-b border-rule py-20">
         <div className="container-x max-w-4xl">
           <p className="stamp mb-4">Trajetória</p>
-          <h2 className="font-display text-3xl font-medium tracking-tight md:text-4xl">
+          <h2 className="font-display text-2xl font-medium tracking-tight sm:text-3xl md:text-4xl">
             Do laboratório de metrologia à coordenação de tecnologia.
           </h2>
 
@@ -202,7 +202,7 @@ export default function SobrePage() {
       <section className="border-b border-rule py-20">
         <div className="container-x max-w-4xl">
           <p className="stamp mb-4">Formação</p>
-          <h2 className="font-display text-3xl font-medium tracking-tight md:text-4xl">
+          <h2 className="font-display text-2xl font-medium tracking-tight sm:text-3xl md:text-4xl">
             Formação continuada entre engenharia, dados e desenvolvimento humano.
           </h2>
 

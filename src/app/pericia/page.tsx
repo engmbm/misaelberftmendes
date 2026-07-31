@@ -14,7 +14,7 @@ export default function PericiaPage() {
       <section className="border-b border-rule py-20 md:py-24">
         <div className="container-x">
           <p className="fase mb-4">Engenharia · Perícia</p>
-          <h1 className="max-w-3xl font-display text-4xl font-medium leading-tight tracking-tight md:text-5xl">
+          <h1 className="max-w-3xl font-display text-3xl font-medium leading-tight tracking-tight sm:text-4xl md:text-5xl">
             Perito engenheiro eletricista para casos que precisam de decisão
             técnica.
           </h1>
@@ -44,7 +44,7 @@ export default function PericiaPage() {
       <section className="border-b border-rule py-20">
         <div className="container-x">
           <p className="stamp mb-6">Dois caminhos</p>
-          <h2 className="font-display text-3xl font-medium tracking-tight md:text-4xl">
+          <h2 className="font-display text-2xl font-medium tracking-tight sm:text-3xl md:text-4xl">
             Perito judicial ou assistente técnico do advogado.
           </h2>
           <p className="mt-4 max-w-2xl text-sm text-ink-muted">
@@ -228,7 +228,7 @@ export default function PericiaPage() {
             <p className="font-mono text-xs uppercase tracking-tag text-white/60">
               Para advogados e escritórios
             </p>
-            <h2 className="mt-3 font-display text-3xl font-medium leading-tight tracking-tight md:text-4xl">
+            <h2 className="mt-3 font-display text-2xl font-medium leading-tight tracking-tight sm:text-3xl md:text-4xl">
               Tem um caso que precisa de análise técnica?
             </h2>
             <p className="mt-4 max-w-xl text-white/80">

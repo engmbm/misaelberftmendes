@@ -15,7 +15,7 @@ export default function BlogPage() {
     <section className="py-20 md:py-24">
       <div className="container-x">
         <p className="stamp mb-4">Blog</p>
-        <h1 className="font-display text-4xl font-medium leading-tight tracking-tight md:text-5xl">
+        <h1 className="font-display text-3xl font-medium leading-tight tracking-tight sm:text-4xl md:text-5xl">
           Notas técnicas e reflexões.
         </h1>
         <p className="mt-4 max-w-xl text-ink-soft">

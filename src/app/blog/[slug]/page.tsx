@@ -89,7 +89,7 @@ export default async function PostPage({
         </Link>
 
         <p className="fase mt-10">{post.area}</p>
-        <h1 className="mt-3 font-display text-4xl font-medium leading-tight tracking-tight md:text-5xl">
+        <h1 className="mt-3 font-display text-3xl font-medium leading-tight tracking-tight sm:text-4xl md:text-5xl">
           {post.title}
         </h1>
         <p className="mt-4 text-lg text-ink-soft">{post.description}</p>

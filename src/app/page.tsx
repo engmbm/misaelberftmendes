@@ -76,7 +76,7 @@ export default function HomePage() {
             <span>Porto Alegre / RS</span>
           </div>
 
-          <h1 className="max-w-3xl font-display text-4xl font-medium leading-[1.15] tracking-tight md:text-5xl">
+          <h1 className="max-w-3xl font-display text-3xl font-medium leading-tight tracking-tight sm:text-4xl md:text-5xl">
             Engenheiro eletricista para
             <span className="text-tensao"> sua empresa</span>.
           </h1>
@@ -117,7 +117,7 @@ export default function HomePage() {
           <div className="mb-12 flex items-end justify-between gap-6">
             <div>
               <p className="stamp mb-3">Serviços de engenharia</p>
-              <h2 className="font-display text-3xl font-medium tracking-tight md:text-4xl">
+              <h2 className="font-display text-2xl font-medium tracking-tight sm:text-3xl md:text-4xl">
                 O que sua empresa precisa resolver?
               </h2>
             </div>
@@ -177,7 +177,7 @@ export default function HomePage() {
         <div className="container-x">
           <div className="mb-12">
             <p className="stamp mb-3">Todas as frentes</p>
-            <h2 className="font-display text-3xl font-medium tracking-tight md:text-4xl">
+            <h2 className="font-display text-2xl font-medium tracking-tight sm:text-3xl md:text-4xl">
               Engenharia é o eixo. Coaching e docência completam.
             </h2>
             <p className="mt-4 max-w-2xl text-sm text-ink-muted">
@@ -328,7 +328,7 @@ export default function HomePage() {
             <p className="font-mono text-xs uppercase tracking-tag text-white/60">
               Próximo passo
             </p>
-            <h2 className="mt-3 font-display text-3xl font-medium leading-tight tracking-tight md:text-4xl">
+            <h2 className="mt-3 font-display text-2xl font-medium leading-tight tracking-tight sm:text-3xl md:text-4xl">
               Precisa de laudo, ART, regularização ou perícia?
             </h2>
             <p className="mt-4 max-w-xl text-white/80">
