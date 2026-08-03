@@ -48,6 +48,16 @@ export function Footer() {
                   LinkedIn
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/engembm"
+                  target="_blank"
+                  rel="noopener"
+                  className="hover:text-tensao"
+                >
+                  Instagram
+                </a>
+              </li>
             </ul>
           </div>
         </div>

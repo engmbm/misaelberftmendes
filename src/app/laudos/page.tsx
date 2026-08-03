@@ -19,25 +19,32 @@ const tiposLaudo = [
     codigo: "02",
     titulo: "Laudo de SPDA (NBR 5419)",
     descricao:
-      "Inspeção do Sistema de Proteção contra Descargas Atmosféricas — para-raios, malha de aterramento e continuidade — conforme a NBR 5419, com relatório e ART.",
+      "Inspeção do Sistema de Proteção contra Descargas Atmosféricas (para-raios, malha de aterramento e continuidade) conforme a NBR 5419, com relatório e ART.",
     para: "Edificações comerciais, industriais e prediais",
   },
   {
     codigo: "03",
+    titulo: "Laudo termográfico",
+    descricao:
+      "Inspeção termográfica de painéis, quadros de distribuição, subestações e sistemas em carga com câmera termográfica. Identifica pontos de aquecimento anormal (mau contato, sobrecarga, oxidação de conexões) para ação preditiva antes da falha. Relatório com termogramas anexos e ART emitida.",
+    para: "Indústrias, condomínios, seguradoras, manutenção predial",
+  },
+  {
+    codigo: "04",
     titulo: "Laudo NR-10",
     descricao:
       "Documentação exigida pela NR-10 para segurança em instalações e serviços em eletricidade: prontuário, diagramas, medidas de controle e responsabilidade técnica.",
     para: "Empresas com trabalhadores expostos a risco elétrico",
   },
   {
-    codigo: "04",
+    codigo: "05",
     titulo: "Laudo de aterramento e medição",
     descricao:
       "Medição de resistência de aterramento e verificação da malha, com instrumentação adequada e emissão de laudo técnico assinado.",
     para: "Indústrias, data centers, subestações",
   },
   {
-    codigo: "05",
+    codigo: "06",
     titulo: "Laudo pericial e cautelar",
     descricao:
       "Laudo técnico para uso em contestações, seguros, ações judiciais ou vistoria cautelar de instalações antes de reforma, compra ou locação.",

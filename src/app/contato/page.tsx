@@ -52,6 +52,17 @@ export default function ContatoPage() {
               </a>
             </div>
             <div>
+              <p className="stamp mb-1">Instagram</p>
+              <a
+                href="https://www.instagram.com/engembm"
+                target="_blank"
+                rel="noopener"
+                className="text-tensao hover:text-tensao-lo"
+              >
+                @engembm
+              </a>
+            </div>
+            <div>
               <p className="stamp mb-1">Registro profissional</p>
               <p className="font-mono text-sm">CREA-RS 251305</p>
             </div>
