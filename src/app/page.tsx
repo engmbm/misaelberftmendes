@@ -27,6 +27,14 @@ const servicos = [
     href: "/pericia",
     cta: "Solicitar análise do caso",
   },
+  {
+    codigo: "04",
+    titulo: "Diagnóstico de eficiência energética",
+    lead: "Analisador instalado no QGBT por 7 dias mede consumo, demanda, fator de potência e harmônicas. Laudo com ART aponta onde há economia recuperável.",
+    publico: "Indústrias · Empresas · Comércios de médio porte",
+    href: "/eficiencia-energetica",
+    cta: "Solicitar diagnóstico",
+  },
 ];
 
 const frentes = [
@@ -127,7 +135,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid gap-4 md:grid-cols-3">
+          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {servicos.map((s) => (
               <div
                 key={s.codigo}
@@ -168,6 +176,49 @@ export default function HomePage() {
             <Link href="/contato" className="btn-ghost">
               Solicitar orçamento pelo formulário
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* VÍDEO — apresentação rápida dos serviços */}
+      <section className="border-b border-rule py-20">
+        <div className="container-x">
+          <div className="grid items-center gap-10 md:grid-cols-[1fr_auto]">
+            <div className="max-w-xl">
+              <p className="stamp mb-3">Em 60 segundos</p>
+              <h2 className="font-display text-2xl font-medium leading-tight tracking-tight sm:text-3xl md:text-4xl">
+                Uma passada rápida pelo que ofereço.
+              </h2>
+              <p className="mt-4 text-ink-soft">
+                Se preferir ver a mim explicando, este vídeo curto resume
+                os principais serviços de engenharia e para quem eles
+                servem.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <a
+                  href="https://wa.me/5551992387777"
+                  target="_blank"
+                  rel="noopener"
+                  className="btn-primary"
+                >
+                  Falar no WhatsApp
+                </a>
+                <Link href="#servicos" className="btn-ghost">
+                  Ver todos os serviços
+                </Link>
+              </div>
+            </div>
+            <div className="mx-auto w-full max-w-[280px]">
+              <div className="aspect-[9/16] overflow-hidden rounded-2xl border border-rule bg-black shadow-sm">
+                <iframe
+                  src="https://www.youtube.com/embed/hvFC2qN2SMo"
+                  title="Serviços — Misael Berft Mendes"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="h-full w-full"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -120,6 +120,31 @@ export default function SobrePage() {
         </div>
       </section>
 
+      {/* Vídeo apresentação */}
+      <section className="border-b border-rule py-16 md:py-20">
+        <div className="container-x">
+          <div className="mx-auto max-w-3xl">
+            <p className="stamp mb-4">Apresentação em vídeo</p>
+            <h2 className="font-display text-2xl font-medium tracking-tight sm:text-3xl md:text-4xl">
+              Quem sou e como trabalho.
+            </h2>
+            <p className="mt-4 text-ink-soft">
+              Uma apresentação rápida sobre minha trajetória e a forma como
+              atuo nas três frentes (engenharia, coaching e docência).
+            </p>
+            <div className="mt-8 aspect-video overflow-hidden rounded-xl border border-rule bg-black">
+              <iframe
+                src="https://www.youtube.com/embed/z5xDRDcBcSE"
+                title="Apresentação — Misael Berft Mendes"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="h-full w-full"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Bio narrativa */}
       <section className="border-b border-rule py-16">
         <div className="container-x max-w-3xl">

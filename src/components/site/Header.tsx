@@ -30,11 +30,20 @@ export function Header() {
             className="flex items-center gap-2.5"
             aria-label="Página inicial"
           >
-            <span className="grid h-8 w-8 place-items-center rounded-md bg-tensao text-white text-[13px] font-medium font-display">
-              MB
-            </span>
-            <span className="font-display text-[14px] sm:text-[15px] font-medium tracking-tight">
-              Misael Berft Mendes
+            <img
+              src="/logo.svg"
+              alt=""
+              width={32}
+              height={32}
+              className="h-8 w-8"
+            />
+            <span className="flex flex-col leading-tight">
+              <span className="font-display text-[15px] sm:text-[16px] font-semibold tracking-tight">
+                MBM
+              </span>
+              <span className="font-mono text-[9px] uppercase tracking-tag text-ink-muted">
+                Misael Berft Mendes
+              </span>
             </span>
           </Link>
 

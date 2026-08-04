@@ -83,7 +83,7 @@ export default function EngenhariaPage() {
             ))}
           </div>
 
-          <div className="mt-4 grid gap-4 md:grid-cols-3">
+          <div className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             <Link
               href="/laudos"
               className="group flex flex-col rounded-lg border-2 border-tensao/30 bg-white p-8 transition hover:border-tensao"
@@ -93,8 +93,9 @@ export default function EngenhariaPage() {
                 Laudos técnicos elétricos
               </h3>
               <p className="mt-3 flex-1 text-sm text-ink-soft">
-                Conformidade (NBR 5410), SPDA (NBR 5419), NR-10, aterramento e
-                laudo pericial — para empresas, indústrias e condomínios.
+                Conformidade (NBR 5410), SPDA (NBR 5419), termografia,
+                NR-10, aterramento e laudo pericial. Para empresas,
+                indústrias e condomínios.
               </p>
               <p className="mt-6 text-sm font-medium text-tensao">
                 Ver página de laudos →
@@ -110,7 +111,7 @@ export default function EngenhariaPage() {
               </h3>
               <p className="mt-3 flex-1 text-sm text-ink-soft">
                 Assumo a Responsabilidade Técnica da sua empresa e faço o
-                registro no CREA-RS — regularização pontual ou RT mensal
+                registro no CREA-RS. Regularização pontual ou RT mensal
                 contínua.
               </p>
               <p className="mt-6 text-sm font-medium text-tensao">
@@ -126,12 +127,29 @@ export default function EngenhariaPage() {
                 Perícia e assistência técnica
               </h3>
               <p className="mt-3 flex-1 text-sm text-ink-soft">
-                Perito judicial nomeado e assistente técnico contratado por
-                advogados — em contestação de TOI, acidentes, incêndios de
-                origem elétrica e vícios de obra.
+                Perito judicial nomeado e assistente técnico contratado
+                por advogados em contestação de TOI, acidentes, incêndios
+                de origem elétrica e vícios de obra.
               </p>
               <p className="mt-6 text-sm font-medium text-tensao">
                 Ver página de perícia →
+              </p>
+            </Link>
+            <Link
+              href="/eficiencia-energetica"
+              className="group flex flex-col rounded-lg border-2 border-tensao/30 bg-white p-8 transition hover:border-tensao"
+            >
+              <p className="fase mb-4">Saiba mais</p>
+              <h3 className="font-display text-xl font-medium tracking-tight">
+                Diagnóstico de eficiência energética
+              </h3>
+              <p className="mt-3 flex-1 text-sm text-ink-soft">
+                Analisador de energia instalado no QGBT por 7 dias. Laudo
+                com ART aponta multa por reativo, demanda errada,
+                harmônicas e onde há economia recuperável.
+              </p>
+              <p className="mt-6 text-sm font-medium text-tensao">
+                Ver página de eficiência →
               </p>
             </Link>
           </div>
