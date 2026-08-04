@@ -190,9 +190,7 @@ export default function HomePage() {
                 Uma passada rápida pelo que ofereço.
               </h2>
               <p className="mt-4 text-ink-soft">
-                Se preferir ver a mim explicando, este vídeo curto resume
-                os principais serviços de engenharia e para quem eles
-                servem.
+                Este vídeo curto resume os serviços oferecidos.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
